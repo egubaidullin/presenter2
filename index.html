@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Presentation Script Viewer</title>
+      <link rel="stylesheet" href="/src/style.css">
+    </head>
+    <body>
+      <div class="container">
+        <div class="controls">
+          <input type="file" id="file-input" accept=".md,.txt">
+          <textarea id="text-input" placeholder="Paste your script here..."></textarea>
+          <div class="buttons">
+            <button id="preview-btn">Preview</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+        </div>
+        <div id="content" class="content"></div>
+      </div>
+      <script type="module" src="/src/main.js"></script>
+    </body>
+    </html>
